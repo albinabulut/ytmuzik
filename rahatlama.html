@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Müzik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="ust-menu">
+        <div class="logo-alani">
+            <svg id="hamburgerBtn" class="hamburger-ikon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+            </svg>
+            <img src="resimler/logo.png" alt="Site Logosu" class="logo">
+          
+        </div>
+        
+        <div class="ikon-alani">
+            <svg class="arama" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <svg class="zil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/>
+            </svg>
+            <svg class="profil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/>
+            </svg>
+        </div>
+    </header>
+
+    <div class="ana-duzen">
+        
+        <aside class="genis-yan-menu" id="yanMenu">
+            <nav class="ana-navigasyon">
+                <a href="index.html" class="nav-oge aktif">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l-9 7v11h6v-7h6v7h6V10z"/></svg>
+                    <span>Ana Sayfa</span>
+                </a>
+                <a href="kesfet.html" class="nav-oge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                    <span>Keşfet</span>
+                </a>
+                <a href="kitaplik.html" class="nav-oge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    <span>Kitaplık</span>
+                </a>
+            </nav>
+
+            <hr class="ayirici">
+
+            <div class="yeni-liste-alani">
+                <button class="yeni-liste-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                    <span>Yeni oynatma listesi</span>
+                </button>
+            </div>
+
+            <div class="kullanici-listeleri">
+                <div class="liste-oge">
+                <a href="liste.html"> <h4>Beğendiğim müzikler</h4>
+                    <p>Otomatik oynatma listesi</p></a>
+                </div>
+                <div class="liste-oge">
+                   <a href="favmuzik.html"><h4>hayko cepkin</h4>
+                    <p>Albina playlist</p></a> 
+                </div>
+            </div>
+        </aside>
+
+        <main class="icerik-alani">
+            
+            <div class="filtre-cubugu">
+                <button onclick="window.location.href='enerjik.html'" class="kategori-btn">Enerjik</button>
+                <button onclick="window.location.href='keyifli.html'" class="kategori-btn">Keyifli</button>
+                <button onclick="window.location.href='rahatlama.html'" class="kategori-btn">Rahatlama</button>
+                <button onclick="window.location.href='odaklanma.html'" class="kategori-btn">Odaklanma</button>
+                <button class="kategori-btn">İşe gidip gelme</button>
+                <button class="kategori-btn">Antrenman</button>
+                <button class="kategori-btn">Hüzünlü</button>
+                <button class="kategori-btn">Romantik</button>
+                <button class="kategori-btn">Parti</button>
+                <button class="kategori-btn">Uyku</button>
+            </div>
+
+            <section class="kategori-bolumu">
+                <div class="bolum-basligi">
+                    <h2>Topluluktan</h2>
+                </div>
+
+                <div class="kart-kapsayici">
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #1a365d;"></div>
+                                <div class="parca" style="background-color: #b7791f;"></div>
+                                <div class="parca" style="background-color: #2b6cb0;"></div>
+                                <div class="parca" style="background-color: #c53030;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>hareketli</h3>
+                            <p>Gülsüm DALMAZ • 2208 B görüntüleme</p>
+                        </div>
+                    </div>
+
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #742a2a;"></div>
+                                <div class="parca" style="background-color: #d69e2e;"></div>
+                                <div class="parca" style="background-color: #97266d;"></div>
+                                <div class="parca" style="background-color: #2c5282;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>Sakin Türkçe İndie</h3>
+                            <p>Sevgi Sevi • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #d32323;"></div>
+                                <div class="parca" style="background-color: #d69e2e;"></div>
+                                <div class="parca" style="background-color: #97266d;"></div>
+                                <div class="parca" style="background-color: #2c5282;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>HAYKO CEPKİN LİST</h3>
+                            <p>Hayko Cepkin • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #742a2a;"></div>
+                                <div class="parca" style="background-color: #d69e2e;"></div>
+                                <div class="parca" style="background-color: #97266d;"></div>
+                                <div class="parca" style="background-color: #2c5282;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">    
+                            <h3>ANADOLU ROCK</h3>
+                            <p>UZAYDAN • 1,5 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #1a365d;"></div>
+                                <div class="parca" style="background-color: #b7791f;"></div>
+                                <div class="parca" style="background-color: #2b6cb0;"></div>
+                                <div class="parca" style="background-color: #c53030;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>hareketli</h3>
+                            <p>Gülsüm DALMAZ • 2208 B görüntüleme</p>
+                        </div>
+                    </div>
+
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #742a2a;"></div>
+                                <div class="parca" style="background-color: #d69e2e;"></div>
+                                <div class="parca" style="background-color: #97266d;"></div>
+                                <div class="parca" style="background-color: #2c5282;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>Sakin Türkçe İndie</h3>
+                            <p>Sevgi Sevi • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #d32323;"></div>
+                                <div class="parca" style="background-color: #d69e2e;"></div>
+                                <div class="parca" style="background-color: #97266d;"></div>
+                                <div class="parca" style="background-color: #2c5282;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>HAYKO CEPKİN LİST</h3>
+                            <p>Hayko Cepkin • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #742a2a;"></div>
+                                <div class="parca" style="background-color: #d69e2e;"></div>
+                                <div class="parca" style="background-color: #97266d;"></div>
+                                <div class="parca" style="background-color: #2c5282;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">    
+                            <h3>ANADOLU ROCK</h3>
+                            <p>UZAYDAN • 1,5 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #1a365d;"></div>
+                                <div class="parca" style="background-color: #b7791f;"></div>
+                                <div class="parca" style="background-color: #2b6cb0;"></div>
+                                <div class="parca" style="background-color: #c53030;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>hareketli</h3>
+                            <p>Gülsüm DALMAZ • 2208 B görüntüleme</p>
+                        </div>
+                    </div>
+
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #742a2a;"></div>
+                                <div class="parca" style="background-color: #d69e2e;"></div>
+                                <div class="parca" style="background-color: #97266d;"></div>
+                                <div class="parca" style="background-color: #2c5282;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>Sakin Türkçe İndie</h3>
+                            <p>Sevgi Sevi • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #d32323;"></div>
+                                <div class="parca" style="background-color: #d69e2e;"></div>
+                                <div class="parca" style="background-color: #97266d;"></div>
+                                <div class="parca" style="background-color: #2c5282;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>HAYKO CEPKİN LİST</h3>
+                            <p>Hayko Cepkin • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #742a2a;"></div>
+                                <div class="parca" style="background-color: #d69e2e;"></div>
+                                <div class="parca" style="background-color: #97266d;"></div>
+                                <div class="parca" style="background-color: #2c5282;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">    
+                            <h3>ANADOLU ROCK</h3>
+                            <p>UZAYDAN • 1,5 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kart-kapsayici">
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>hareketli</h3>
+                            <p>Gülsüm DALMAZ • 2208 B görüntüleme</p>
+                        </div>
+                    </div>
+
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                               <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>Sakin Türkçe İndie</h3>
+                            <p>Sevgi Sevi • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>HAYKO CEPKİN LİST</h3>
+                            <p>Hayko Cepkin • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">    
+                            <h3>ANADOLU ROCK</h3>
+                            <p>UZAYDAN • 1,5 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>hareketli</h3>
+                            <p>Gülsüm DALMAZ • 2208 B görüntüleme</p>
+                        </div>
+                    </div>
+
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                               <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>Sakin Türkçe İndie</h3>
+                            <p>Sevgi Sevi • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <di class="parca" style="background-color: #ff0000;"></di   v>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>HAYKO CEPKİN LİST</h3>
+                            <p>Hayko Cepkin • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">    
+                            <h3>ANADOLU ROCK</h3>
+                            <p>UZAYDAN • 1,5 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>hareketli</h3>
+                            <p>Gülsüm DALMAZ • 2208 B görüntüleme</p>
+                        </div>
+                    </div>
+
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                               <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>Sakin Türkçe İndie</h3>
+                            <p>Sevgi Sevi • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">A</div>
+                        </div>
+                        <div class="kart-bilgi">
+                            <h3>HAYKO CEPKİN LİST</h3>
+                            <p>Hayko Cepkin • 1 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                    <div class="sarki-karti">
+                        <div class="kart-resim-alani">
+                            <div class="dortlu-resim">
+                                <div class="parca" style="background-color: #ff0000;"></div>
+                                <div class="parca" style="background-color: #f6ff00;"></div>
+                                <div class="parca" style="background-color: #ea00ff;"></div>
+                                <div class="parca" style="background-color: #00d9ff;"></div>
+                            </div>
+                            <div class="kart-avatar-metin">U</div>
+                        </div>
+                        <div class="kart-bilgi">    
+                            <h3>ANADOLU ROCK</h3>
+                            <p>UZAYDAN • 1,5 Mn görüntüleme</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const yanMenu = document.getElementById('yanMenu');
+
+        hamburgerBtn.addEventListener('click', function() {
+            yanMenu.classList.toggle('kapali');
+        });
+    </script>
+    <footer class="alt-oynatici">
+    <div class="ilerleme-cubugu">
+        <div class="ilerleme-kirmizi" style="width: 75%;"></div>
+    </div>
+
+    <div class="oynatici-ic">
+        
+        <div class="oynatici-sol">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg> <svg viewBox="0 0 24 24" fill="currentColor" class="pause-ikon"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg> <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg> <span class="sure">3:32 / 4:39</span>
+        </div>
+
+        <div class="oynatici-orta">
+            <img src="resimler/album1.png" alt="Kapak" class="sarki-kapak" style="background: #ccc;">
+            <div class="sarki-kisa-bilgi">
+                <h4>Zalim</h4>
+                <p>Sezen Aksu • Düş Bahçeleri • 1996</p>
+            </div>
+            <div class="orta-aksiyonlar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2"/></svg> <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/></svg> </div>
+        </div>
+
+        <div class="oynatici-sag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg> </div>
+
+    </div>
+</footer>
+</body>
+</html>

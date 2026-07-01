@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Müzik - Beğendiğim Müzikler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="ust-menu">
+        <div class="logo-alani">
+            <svg id="hamburgerBtn" class="hamburger-ikon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
+            </svg>
+            <img src="resimler/logo.png" alt="Site Logosu" class="logo">
+            <span class="logo-metin">Music</span>
+        </div>
+        
+        <div class="ikon-alani">
+            <svg class="arama" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <svg class="zil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/>
+            </svg>
+            <svg class="profil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/>
+            </svg>
+        </div>
+    </header>
+
+    <div class="ana-duzen">
+        
+        <aside class="genis-yan-menu" id="yanMenu">
+            <nav class="ana-navigasyon">
+                <a href="#" class="nav-oge">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l-9 7v11h6v-7h6v7h6V10z"/></svg>
+                    <span>Ana Sayfa</span>
+                </a>
+                <a href="kesfet.html" class="nav-oge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                    <span>Keşfet</span>
+                </a>
+                <a href="kitaplik.html" class="nav-oge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    <span>Kitaplık</span>
+                </a>
+            </nav>
+
+            <hr class="ayirici">
+
+            <div class="yeni-liste-alani">
+                <button class="yeni-liste-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                    <span>Yeni oynatma listesi</span>
+                </button>
+            </div>
+
+            <div class="kullanici-listeleri">
+                <div class="liste-oge">
+                    <a href="favmuzik.html" class="liste-link">
+                        <h4>Beğendiğim müzikler</h4>
+                        <p>Otomatik oynatma listesi</p>
+                    </a>
+                </div>
+                <div class="liste-oge">
+                    <a href="liste.html" class="liste-link">
+                        <h4>hayko cepkin</h4>
+                        <p>Albina playlist</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="icerik-alani liste-sayfasi">
+            
+            <div class="liste-sol-bilgi">
+                <div class="liste-kapak">
+                    <svg viewBox="0 0 24 24" fill="white" class="kapak-ikon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+                </div>
+                <h1 class="liste-baslik">Beğendiğim müzikler</h1>
+                <div class="liste-profil">
+                    <div class="profil-harf">A</div>
+                    <span>Albina :)</span>
+                </div>
+                <div class="liste-detay">
+                    <p>Otomatik oynatma listesi • 2026</p>
+                    <p>10 şarkı • Yaklaşık 45 dakika</p>
+                    <p class="liste-aciklama">YouTube uygulamalarında beğendiğiniz müzikler burada...</p>
+                </div>
+                <div class="liste-butonlar">
+                    <button class="yuvarlak-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                    </button>
+                    <button class="oynat-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                    <button class="yuvarlak-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="sarki-listesi-sag">
+                
+                <div class="liste-satir">
+                    <img src="resimler/album1.png" alt="Kapak" class="satir-resim" style="background: #ccc;">
+                    <div class="satir-bilgi">
+                        <h4>Jauap bar ma?</h4>
+                        <p>Sadraddin • Jauap bar ma?</p>
+                    </div>
+                    <div class="satir-aksiyon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg></div>
+                    <div class="satir-sure">2:37</div>
+                </div>
+
+                <div class="liste-satir aktif-satir">
+                    <img src="resimler/album1.png" alt="Kapak" class="satir-resim" style="background: #888;">
+                    <div class="satir-bilgi">
+                        <h4>Yalan Sanırım</h4>
+                        <p>Tolga Çevik ve Özer Atik • Yalan Sanırım</p>
+                    </div>
+                    <div class="satir-aksiyon gorunur">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                    </div>
+                    <div class="satir-sure">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+                    </div>
+                </div>
+
+                <div class="liste-satir">
+                    <img src="resimler/album1.png" alt="Kapak" class="satir-resim" style="background: #444;">
+                    <div class="satir-bilgi">
+                        <h4>Yıllar Utansın</h4>
+                        <p>Timuçin Esen • Müslüm Baba</p>
+                    </div>
+                    <div class="satir-aksiyon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg></div>
+                    <div class="satir-sure">6:22</div>
+                </div>
+
+                <div class="liste-satir">
+                    <img src="resimler/album1.png" alt="Kapak" class="satir-resim" style="background: #e74c3c;">
+                    <div class="satir-bilgi">
+                        <h4>Kaçın Kurası</h4>
+                        <p>Sezen Aksu • Düş Bahçeleri</p>
+                    </div>
+                    <div class="satir-aksiyon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg></div>
+                    <div class="satir-sure">3:45</div>
+                </div>
+
+                <div class="liste-satir">
+                    <img src="resimler/album1.png" alt="Kapak" class="satir-resim" style="background: #2ecc71;">
+                    <div class="satir-bilgi">
+                        <h4>Fırtına</h4>
+                        <p>Hayko Cepkin • Sandık</p>
+                    </div>
+                    <div class="satir-aksiyon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg></div>
+                    <div class="satir-sure">4:12</div>
+                </div>
+
+                <div class="liste-satir">
+                    <img src="resimler/album1.png" alt="Kapak" class="satir-resim" style="background: #3498db;">
+                    <div class="satir-bilgi">
+                        <h4>Dans Et</h4>
+                        <p>Hayko Cepkin • Tanışma Bitti</p>
+                    </div>
+                    <div class="satir-aksiyon"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg></div>
+                    <div class="satir-sure">3:58</div>
+                </div>
+
+                
+                
+            </div>
+        </main>
+    </div>
+
+    <footer class="alt-oynatici">
+        <div class="ilerleme-cubugu">
+            <div class="ilerleme-kirmizi" style="width: 75%;"></div>
+        </div>
+        <div class="oynatici-ic">
+            <div class="oynatici-sol">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" class="pause-ikon"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+                <span class="sure">3:32 / 4:39</span>
+            </div>
+            <div class="oynatici-orta">
+                <img src="resimler/album1.png" alt="Kapak" class="sarki-kapak" style="background: #888;">
+                <div class="sarki-kisa-bilgi">
+                    <h4>Yalan Sanırım</h4>
+                    <p>Tolga Çevik ve Özer Atik</p>
+                </div>
+                <div class="orta-aksiyonlar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                </div>
+            </div>
+            <div class="oynatici-sag">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const yanMenu = document.getElementById('yanMenu');
+        hamburgerBtn.addEventListener('click', function() {
+            yanMenu.classList.toggle('kapali');
+        });
+    </script>
+</body>
+</html>

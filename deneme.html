@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Music Klonu</title>
+    <style>
+        /* GENEL KOYU TEMA AYARLARI */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff; /* YT Music siyahı */
+            color: rgb(0, 0, 0); /* Yazılar beyaz */
+        }
+
+        /* HEADER (ÜST MENÜ) */
+        .ust-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px 30px;
+            border-bottom: 1px solid #616161;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-alani img {
+            height: 35px;
+        }
+
+        .arama-kutusu {
+            background-color: #9f9f9f;
+            border: 1px solid #555;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            width: 300px;
+            outline: none;
+        }
+
+    
+        .icerik {
+            padding: 30px;
+        }
+
+        .baslik {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .muzik-izgarasi {
+            display: grid;
+            
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        
+        .muzik-karti {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            transition: transform 0.2s; 
+        }
+
+        .muzik-karti:hover {
+            transform: scale(1.05); 
+        }
+
+        .album-kapagi {
+            width: 100%;
+            aspect-ratio: 1 / 1; 
+            background-color: #7b7a7a;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .sarki-adi {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .sanatci {
+            font-size: 14px;
+            color: #aaaaaa; 
+        }
+
+        
+        @media (max-width: 768px) {
+            .arama-kutusu {
+                display: none; 
+            }
+            .icerik {
+                padding: 15px;
+            }
+            .muzik-izgarasi {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header class="ust-menu">
+        <div class="logo-alani">
+            <a href="#">
+                <!-- Gerçek bir YT Music logosu ekleyebilirsin -->
+                <img src="logo.png" alt="YT Music">
+            </a>
+        </div>
+        <input type="text" class="arama-kutusu" placeholder="Şarkı, albüm veya sanatçı ara...">
+        <div style="width: 35px; height: 35px; background: red; border-radius: 50%;"></div> <!-- Profil Fotoğrafı Temsili -->
+    </header>
+
+    <!-- Ana İçerik -->
+    <div class="icerik">
+        <div class="baslik">Tekrar Dinleyin</div>
+        
+        <!-- Müzik Kartlarının Dizildiği Alan -->
+        <div class="muzik-izgarasi">
+            
+            <!-- 1. Şarkı Kartı -->
+            <div class="muzik-karti">
+                <img src="https://via.placeholder.com/200" alt="Albüm Kapak" class="album-kapagi">
+                <div class="sarki-adi">Blinding Lights</div>
+                <div class="sanatci">The Weeknd</div>
+            </div>
+
+            <!-- 2. Şarkı Kartı -->
+            <div class="muzik-karti">
+                <img src="https://via.placeholder.com/200" alt="Albüm Kapak" class="album-kapagi">
+                <div class="sarki-adi">Shape of You</div>
+                <div class="sanatci">Ed Sheeran</div>
+            </div>
+
+            <!-- 3. Şarkı Kartı -->
+            <div class="muzik-karti">
+                <img src="https://via.placeholder.com/200" alt="Albüm Kapak" class="album-kapagi">
+                <div class="sarki-adi">Bohemian Rhapsody</div>
+                <div class="sanatci">Queen</div>
+            </div>
+            
+            <!-- 4. Şarkı Kartı -->
+            <div class="muzik-karti">
+                <img src="https://via.placeholder.com/200" alt="Albüm Kapak" class="album-kapagi">
+                <div class="sarki-adi">Believer</div>
+                <div class="sanatci">Imagine Dragons</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
