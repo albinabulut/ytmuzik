@@ -1,4 +1,4 @@
-/* Genel sayfa arka planı (Menünün net görünmesi için açık gri eklendi) */
+
 body {
   background-color: #f9f9f9; 
   display: flex;
@@ -13,11 +13,11 @@ body {
   color: #0f0f0f;
   font-family: 'Roboto', sans-serif;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Açık temaya uygun yumuşak gölge */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   overflow: hidden;
 }
 
-/* Kullanıcı Bilgileri (Header) */
+
 .user-info {
   display: flex;
   padding: 16px;
@@ -46,18 +46,18 @@ body {
 .name {
   font-size: 16px;
   font-weight: 500;
-  color: #0f0f0f; /* Koyu metin */
+  color: #0f0f0f; 
 }
 
 .handle {
   font-size: 14px;
-  color: #606060; /* Koyu gri */
+  color: #606060; 
   margin-top: 2px;
   margin-bottom: 8px;
 }
 
 .manage-account {
-  color: #065fd4; /* Açık tema standart mavi link rengi */
+  color: #065fd4; 
   text-decoration: none;
   font-size: 14px;
 }
@@ -70,7 +70,7 @@ body {
 .divider {
   border: 0;
   height: 1px;
-  background-color: #e5e5e5; /* Açık gri çizgi */
+  background-color: #e5e5e5; 
   margin: 0;
 }
 
@@ -88,12 +88,12 @@ body {
   padding: 10px 16px;
   font-size: 14px;
   cursor: pointer;
-  color: #0f0f0f; /* Koyu metin */
+  color: #0f0f0f; 
   transition: background-color 0.2s ease;
 }
 
 .menu-list li:hover {
-  background-color: #f2f2f2; /* Hover (üzerine gelme) için açık gri arka plan */
+  background-color: #f2f2f2; 
 }
 
 .menu-item-left {
@@ -105,14 +105,14 @@ body {
 .menu-list li .material-icons {
   margin-right: 16px;
   font-size: 22px;
-  color: #0f0f0f; /* İkonlar koyu renk */
+  color: #0f0f0f; 
 }
 
 /* Sağ Ok İkonu (Hesap Değiştir kısmındaki) */
 .menu-list li .material-icons.arrow {
   margin-right: 0;
   font-size: 20px;
-  color: #606060; /* Ok ikonu koyu gri */
+  color: #606060; 
 }
 .geri{
     position: absolute;
@@ -120,7 +120,7 @@ body {
     left: 20px;
     width: 30px;
     height: 30px;
-    color: #0f0f0f; /* Koyu renk */
+    color: #0f0f0f; 
     cursor: pointer;
 }
 @media (max-width: 768px) {

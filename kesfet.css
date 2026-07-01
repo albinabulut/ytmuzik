@@ -34,7 +34,7 @@ body {
     height: calc(100vh - 64px); 
 }
 
-/* Sidebar */
+/* menu */
 .genis-yan-menu {
     width: 240px;
     background-color: #ffffff;
@@ -226,7 +226,7 @@ body {
     .bolum-basligi h2 { font-size: 22px; }
     .liste-grid { grid-template-columns: 1fr; grid-auto-flow: row; }
 }
-/* Player */
+/* oynatıcı */
 .alt-oynatici {
     position: fixed;
     bottom: 0;
@@ -249,7 +249,7 @@ body {
 }
 .ilerleme-kirmizi {
     height: 100%;
-    background-color: #ff0000; /* YT Kırmızısı */
+    background-color: #ff0000; 
 }
 
 /* İçerik */
@@ -283,7 +283,7 @@ body {
 
 /* Oynat */
 .pause-ikon {
-    width: 32px !important; /* Ortadaki ikon bir tık büyük */
+    width: 32px !important; 
     height: 32px !important;
 }
 
@@ -329,8 +329,8 @@ body {
 /* Mobil */
 @media (max-width: 768px) {
     .oynatici-ic { padding: 0 10px; }
-    .oynatici-sol, .oynatici-sag { display: none; /* Mobilde yer darlığından sadece orta kısmı gösteririz */ }
-    .orta-aksiyonlar svg:not(:first-child) { display: none; } /* Mobilde çok ikon kalabalığı olmasın */
+    .oynatici-sol, .oynatici-sag { display: none; }
+    .orta-aksiyonlar svg:not(:first-child) { display: none; } 
     .sarki-kisa-bilgi h4 { font-size: 13px; }
     .sarki-kisa-bilgi p { font-size: 11px; }
 }

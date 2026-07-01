@@ -373,7 +373,7 @@ body {
     max-width: 140px;
   }
 }
-/* Player */
+/* oynatıcı */
 .alt-oynatici {
   position: fixed;
   bottom: 0;
@@ -396,7 +396,7 @@ body {
 }
 .ilerleme-kirmizi {
   height: 100%;
-  background-color: #ff0000; /* YT Kırmızısı */
+  background-color: #ff0000; 
 }
 
 /* İçerik */
@@ -482,11 +482,11 @@ body {
   }
   .oynatici-sol,
   .oynatici-sag {
-    display: none; /* Mobilde yer darlığından sadece orta kısmı gösteririz */
+    display: none; 
   }
   .orta-aksiyonlar svg:not(:first-child) {
     display: none;
-  } /* Mobilde çok ikon kalabalığı olmasın */
+  } 
   .sarki-kisa-bilgi h4 {
     font-size: 13px;
   }
@@ -664,7 +664,7 @@ body {
   margin-top: 4px;
 }
 
-/* Playlist Sayfası (Light Theme) */
+
 .liste-sayfasi {
   display: flex;
   gap: 40px;
@@ -675,7 +675,7 @@ body {
   overflow-y: auto;
 }
 
-/* Sol Panel (Oran Orantı) */
+/* Sol Panel Oran Orantı */
 .liste-sol-bilgi {
   width: 300px;
   min-width: 300px;
@@ -774,7 +774,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Sağ Liste (Oran Orantı) */
+/* Sağ Liste Oran Orantı */
 .sarki-listesi-sag {
   flex: 1;
   display: flex;
@@ -860,7 +860,7 @@ body {
   border-radius: 4px;
 }
 
-/* Player */
+/* oynatıcı */
 .alt-oynatici {
   position: fixed;
   bottom: 0;
